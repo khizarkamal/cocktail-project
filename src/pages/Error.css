@@ -1,0 +1,13 @@
+.error-link{
+    background-color: #0e5f0e;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.error-link:hover{
+    background-color: #83d483;
+    color: black;
+}

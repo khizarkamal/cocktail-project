@@ -1,0 +1,11 @@
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 3rem;
+    align-items: center;
+}
+
+.img-link {
+    width: 12.5rem;
+}
