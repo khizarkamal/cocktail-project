@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch,withRouter } from 'react-router-dom'
 // import pages
 import Home from './pages/Home'
 import About from './pages/About'
@@ -9,12 +9,12 @@ import ReactGA from 'react-ga'
 // import components
 import Navbar from './components/Navbar'
 
-const GATAG_ID = 'G-N2T96VGJW4';
-ReactGA.initialize(GATAG_ID)
+const TRACKING_ID = 'G-N2T96VGJW4';
+ReactGA.initialize(TRACKING_ID)
 function App() {
   useEffect(()=>{
     ReactGA.pageview(window.location.pathname + window.location.search);
-  });
+  })
   return (
     <Router>
       <Navbar></Navbar>
@@ -28,4 +28,4 @@ function App() {
   )
 }
 
-export default App
+export default withRouter(App)
